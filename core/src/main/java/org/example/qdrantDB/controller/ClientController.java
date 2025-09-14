@@ -1,7 +1,6 @@
-package org.example.qdrantDB.Controller;
+package org.example.qdrantDB.controller;
 
 import org.example.qdrantDB.dto.client.ClientRequest;
-import org.example.qdrantDB.model.ClientEntity;
 import org.example.qdrantDB.service.ClientService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

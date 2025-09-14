@@ -1,4 +1,4 @@
-package org.example.qdrantDB.Controller;
+package org.example.qdrantDB.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.example.qdrantDB.dto.insert.InsertRequests;
