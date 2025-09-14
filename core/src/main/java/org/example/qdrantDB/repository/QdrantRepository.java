@@ -1,4 +1,4 @@
-package org.example.qdrantDB.DAO;
+package org.example.qdrantDB.repository;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,4 +1,4 @@
-package org.example.qdrantDB.model.search;
+package org.example.qdrantDB.dto.search;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;

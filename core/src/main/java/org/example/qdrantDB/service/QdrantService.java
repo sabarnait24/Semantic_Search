@@ -1,8 +1,8 @@
 package org.example.qdrantDB.service;
 
 import lombok.extern.slf4j.Slf4j;
-import org.example.qdrantDB.DAO.QdrantRepository;
-import org.example.qdrantDB.model.insert.InsertRequests;
+import org.example.qdrantDB.repository.QdrantRepository;
+import org.example.qdrantDB.dto.insert.InsertRequests;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
@@ -19,13 +19,14 @@ public class QdrantService {
     @Autowired
     private QdrantRepository qdrantRepository;
 
-    public ResponseEntity<?> insert(@RequestBody InsertRequests insertRequests, @RequestHeader("X-Client-Id") String clientId){
+
+    public ResponseEntity<?> insert(@RequestBody InsertRequests insertRequests, @RequestHeader("X-Client-Name") String clientName){
         try{
             if(insertRequests == null || insertRequests.getInsertRequestList() == null || insertRequests.getInsertRequestList().isEmpty()){
                 throw new IllegalArgumentException("Argument is Illegal");
             }
 
-            String collectionName = "sabarna"; // hard coded need to chnge
+            String collectionName = "hfhgf";
 
             List<Map<String, Object>> points = insertRequests.getInsertRequestList().stream().map(request -> {
                 if (request.getId() == null) {

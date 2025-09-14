@@ -1,4 +1,4 @@
-package org.example.qdrantDB.model.insert;
+package org.example.qdrantDB.dto.insert;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

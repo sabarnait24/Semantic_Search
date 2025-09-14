@@ -1,4 +1,4 @@
-package org.example.qdrantDB.model.insert;
+package org.example.qdrantDB.dto.insert;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
