@@ -24,7 +24,6 @@ public class ClientServiceImpl implements ClientService {
 
     public ResponseEntity<?> createClient(@RequestBody ClientRequest clientRequest) {
         try {
-
             String client = clientRequest.getClient();
 
             if(isClientExists(client)){
